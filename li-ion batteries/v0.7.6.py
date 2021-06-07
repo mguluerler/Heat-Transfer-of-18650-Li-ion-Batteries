@@ -465,13 +465,13 @@ while True:
         try:
             selected_t, selected_z = float(input_values[0]), float(input_values[1])
         except:
-            print("Lütfen geçerli sayı giriniz!")
+            print("Please enter a valid number!")
             continue
     else:
         if input_values[0] == "c":
             break
         else:
-            print("Hatalı değer girdiniz!")
+            print("You entered non-valid number!")
             continue
     if float(selected_t) <= max_flowtime and float(selected_z) <= 0.065:
         selected_t = int(math.floor(selected_t / dt))  # Seçilen saniyedeki süre süre partına dönüştürülür. Integer dönmesi için yuvarlama yapılır.
@@ -479,6 +479,6 @@ while True:
 
         graphs.SpecGraphs(selected_t, selected_z, newtime=not (old_time == selected_t))
     else:
-        print("Lütfen t<{} değeri içinde, z<=0.065 içinde seçiniz!".format(max_flowtime))
+        print("Please enter the values: t<{} and z<=0.065".format(max_flowtime))
         continue
     old_time = selected_t
