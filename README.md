@@ -1,7 +1,7 @@
 <h1> Heat Transfer of 18650 Li-ion Batteries </h1>
 <b>Version 0.7.6</b><br>
 This program can be used for calculating heat transfer of li-ion batteries. This program uses this equation:<br>
-<p align="center"><img src="https://github.com/mguluerler/Heat-Transfer-of-18650-Li-ion-Batteries/blob/master/figures/usedformula.png"></p><br>
+<p align="center"><img src="https://github.com/mguluerler/Heat-Transfer-of-18650-Li-ion-Batteries/blob/master/figures/usedformula.png"></p>
 <h3><i>class solvingParams: </i></h3>
 Before calculation, required and desired parameters are entered here.
 <h3><i>class BattProp:</i></h3>
